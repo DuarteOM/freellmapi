@@ -1,4 +1,11 @@
 #!/usr/bin/env bash
+
+# Dispatcher inteligente para Windows/PowerShell vs Bash
+if [[ "$OSTYPE" == "msys" || "$OSTYPE" == "cygwin" ]]; then
+    node "$(dirname "$0")/start-server.js" "$@"
+    exit $?
+fi
+
 # Start the brainstorm server and output connection info
 # Usage: start-server.sh [--project-dir <path>] [--host <bind-host>] [--url-host <display-host>] [--foreground] [--background]
 #

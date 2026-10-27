@@ -1,7 +1,6 @@
 {
   "name": "superpowers",
   "version": "7.0.1",
-  "description": "An agentic skills framework & software development methodology that works: planning, TDD, debugging, and collaboration workflows.",
   "author": {
     "name": "Jesse Vincent",
     "email": "jesse@fsck.com"
@@ -10,13 +9,13 @@
   "repository": "https://github.com/obra/superpowers",
   "license": "MIT",
   "keywords": [
-    "brainstorming",
-    "subagent-driven-development",
     "skills",
-    "planning",
     "tdd",
     "debugging",
-    "code-review",
-    "workflow"
-  ]
+    "collaboration",
+    "best-practices",
+    "workflows"
+  ],
+  "description": "An agentic skills framework & software development methodology that works: planning, TDD, debugging, and collaboration workflows.",
+  "skills": "./skills/"
 }
